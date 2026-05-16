@@ -1,6 +1,7 @@
 soma_idade = 0
 mais_velho = 0
 nome_velho = ""
+mulheres_nova = 0
 
 for i in range(0,4):
 
@@ -16,7 +17,13 @@ for i in range(0,4):
             mais_velho = idade
             nome_velho = nome
 
+    if sexo == "F":
+
+        if idade < 20:
+            mulheres_nova += 1
+
 media = soma_idade / 4
 
 print(f"Media das idades: {media}")
 print(f"Homem mais velho: {nome_velho}")
+print(f"Mulheres menores de 20 anos: {mulheres_nova}")
